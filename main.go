@@ -1,9 +1,9 @@
 package quote
 
-func Hello() string {
-	return "Phyo Min Htun Hello"
-}
-
-func Foo() string {
-	return "This is Foo"
+func Sum(x ...int) int {
+	sum := 0
+	for _, v := range x {
+		sum = sum + v
+	}
+	return sum
 }
